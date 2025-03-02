@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GreenFertix - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #064e3b;
+    }
+    header {
+        background-color: rgba(4, 120, 87, 0.9);
+        color: white;
+        padding: 1rem 0;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+    .nav-links a:hover {
+        color: #a7f3d0;
+    }
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        overflow: hidden;
+    }
+    .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        z-index: 1;
+    }
+    .video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        border-radius: 12px;
+    }
+    .cta-button {
+        display: inline-block;
+        padding: 15px 25px;
+        background-color: #10b981;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+        background-color: #059669;
+    }
+    footer {
+        background-color: rgba(6, 78, 59, 0.9);
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        position: relative;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to GreenFertix</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About Us</a></li>
+        <li><a href="pages/technology.html">Technology</a></li>
+        <li><a href="pages/products.html">Products &amp; Services</a></li>
+        <li><a href="pages/impact.html">Impact &amp; Sustainability</a></li>
+    
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="video-container">
+        <video autoplay loop muted playsinline>
+            <source src="assets/videos/Video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="hero-content">
+      <h2>Innovating Green Urea Production</h2>
+      <p>GreenFertix is revolutionizing sustainable agriculture with environmentally friendly fertilizer solutions.</p>
+      <a href="pages/about.html" class="btn">Learn More</a>
+    </div>
+      
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 GreenFertix. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
