@@ -32,6 +32,7 @@
         list-style: none;
         display: flex;
         gap: 20px;
+        padding: 0;
     }
     .nav-links a {
         color: white;
@@ -42,6 +43,7 @@
     .nav-links a:hover {
         color: #a7f3d0;
     }
+    
     .hero {
         position: relative;
         width: 100%;
@@ -55,11 +57,11 @@
         overflow: hidden;
     }
     .video-container {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         overflow: hidden;
         z-index: 1;
     }
@@ -96,8 +98,9 @@
         position: relative;
         width: 100%;
     }
-       /* Responsive Styles */
-       @media screen and (max-width: 768px) {
+    
+    /* Responsive Styles */
+    @media screen and (max-width: 768px) {
         nav {
             flex-direction: column;
             align-items: center;
@@ -119,19 +122,18 @@
             padding: 20px;
         }
     }
-</style>
+  </style>
 </head>
 <body>
   <header>
     <h1>Welcome to GreenFertix</h1>
     <nav>
-      <ul>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="pages/about.html">About Us</a></li>
         <li><a href="pages/technology.html">Technology</a></li>
         <li><a href="pages/products.html">Products &amp; Services</a></li>
         <li><a href="pages/impact.html">Impact &amp; Sustainability</a></li>
-    
         <li><a href="pages/contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -147,7 +149,7 @@
     <div class="hero-content">
       <h2>Innovating Green Urea Production</h2>
       <p>GreenFertix is revolutionizing sustainable agriculture with environmentally friendly fertilizer solutions.</p>
-      <a href="pages/about.html" class="btn">Learn More</a>
+      <a href="pages/about.html" class="cta-button">Learn More</a>
     </div>
       
     </section>
@@ -158,3 +160,4 @@
   <script src="js/script.js"></script>
 </body>
 </html>
+
